@@ -1,0 +1,19 @@
+<%- include('includes/head.ejs') %>
+  </head>
+
+  <body>
+    <h1 align=" center">Add Customer</h1>
+    <!-- <div  style="border-radius: 25px; border: 2px solid #73AD21; box-shadow: 1px 1px 1px; "> -->
+    <form align=" center" action="/add-customer" method="POST">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name"><br>
+      <label for="email">Email:</label><br>
+      <input type="text" id="email" name="email"><br>
+      <label for="phoneNumber">Phone Number</label><br>
+      <input type="text" id="phoneNumber" name="phoneNumber"><br><br>
+      <button type="submit">Add</button>
+    </form>
+  <!-- </div> -->
+
+    <%- include('includes/home.ejs') %>
+    <%- include('includes/end.ejs') %>
